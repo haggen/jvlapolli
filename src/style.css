@@ -1,0 +1,98 @@
+@import "resetize";
+
+body {
+  background: hsl(199, 100%, 60%) url(illusion.png) repeat;
+  color: #fff;
+  font-family: Saira, sans-serif;
+  font-size: 18px;
+  text-shadow: 0 0.125em 0.125em hsl(199, 82%, 8%);
+}
+
+main {
+  margin: 0 auto;
+  padding: 10% 1.5rem;
+  max-width: 56rem;
+}
+
+section + section,
+header + section {
+  margin-top: 4.5rem;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  max-width: 60ch;
+}
+
+figure {
+  width: 100%;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+figure p {
+  padding: 0.75rem;
+  color: hsl(198, 40%, 71%);
+  font-size: 0.875em;
+}
+
+.contact {
+  list-style: none;
+}
+
+.contact li {
+  font-weight: bolder;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: -50%;
+  width: 2.25em;
+}
+
+.list {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.content > * + * {
+  margin-top: 1.5rem;
+}
+
+.content > h3 + * {
+  margin-top: 0.75rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .contact li {
+    display: inline-block;
+  }
+
+  .contact li + li {
+    margin-left: 3rem;
+  }
+
+  .grid {
+    grid-auto-flow: column;
+    gap: 3rem;
+  }
+}
